@@ -13,7 +13,7 @@ import queryString from "query-string";
 
 registerServiceWorker();
 
-let deviceId = uuid.v4()
+let deviceId = '5GEm36BDFXkKNx9LbW9eX6zAFuwUVJbb9P5UnXaFg2XaoQ7i'
 const parsed = queryString.parse(window.location.search);
 if (!parsed.user) {
   const query = { user: deviceId };
@@ -24,7 +24,7 @@ if (!parsed.user) {
 
 new API({
   // Hard-coded for demo purposes
-  token: "54e24fc3-fda5-478a-b1f7-040ea5aaab33",
+  token: "38fc999c-d621-4411-8263-49752bb6f340",
   deviceId
 })
   .start()
